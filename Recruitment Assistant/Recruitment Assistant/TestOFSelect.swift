@@ -15,6 +15,8 @@ struct TestOFSelect: View {
     @State private var auth = false
     @State private var safe = false
     @State private var isAlert = false
+    @State private var title = ""
+    @State private var message = ""
     var body: some View {
         VStack {
             Text("테스트에 사용할 문제 & 신상파일, 결과 출력 폴더 선택")
@@ -36,14 +38,37 @@ struct TestOFSelect: View {
                                 }
                             } else {
                                 self.isAlert = true
+                                self.title = "관계자 아이디 또는 비밀번호가 다릅니다. "
+                                self.message = ""
                             }
                         } else {
-                            self.auth = false
-                            self.adminID = ""
-                            self.adminPW = ""
+                            if self.UserDB.answerItem == nil || self.UserDB.testItem == nil {
+                                self.auth = false
+                                self.adminID = ""
+                                self.adminPW = ""
+                            } else {
+                                if self.UserDB.userAnswer.count != self.UserDB.answerItem!.count || self.UserDB.userAnswer.count != self.UserDB.testItem!.count || self.UserDB.answerItem!.count != self.UserDB.testItem!.count {
+                                    self.isAlert = true
+                                    self.title = "정답 파일과 문제 파일의 문항 수가 일치하지 않습니다. "
+                                    self.UserDB.TestFile = nil
+                                    self.UserDB.testItem = nil
+                                    self.UserDB.AnswerFile = nil
+                                    self.UserDB.userAnswer = []
+                                    self.UserDB.answerItem = nil
+                                    UserDefaults.standard.removeObject(forKey: "TestFile")
+                                    UserDefaults.standard.removeObject(forKey: "testItem")
+                                    UserDefaults.standard.removeObject(forKey: "AnswerFile")
+                                    UserDefaults.standard.removeObject(forKey: "answerItem")
+                                    UserDefaults.standard.removeObject(forKey: "userAnswer")
+                                } else {
+                                    self.auth = false
+                                    self.adminID = ""
+                                    self.adminPW = ""
+                                }
+                            }
                         }
                     }) { self.auth ? Text("로그아웃") : Text("로그인") }.disabled(self.adminID.isEmpty || self.adminPW.isEmpty).alert(isPresented: self.$isAlert) {
-                        Alert(title: Text("관계자 아이디 또는 비밀번호가 다릅니다. "), dismissButton: .default(Text("승인"), action: { self.adminID = ""; self.adminPW = "" }))
+                        Alert(title: Text(self.title), dismissButton: .default(Text("승인")))
                     }
                     Button(action: {
                         if self.auth { self.UserDB.auth = true } else { self.UserDB.auth = false }
