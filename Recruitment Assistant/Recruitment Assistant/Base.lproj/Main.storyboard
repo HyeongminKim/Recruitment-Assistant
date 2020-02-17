@@ -306,7 +306,7 @@ CA
                                     <items>
                                         <menuItem title="모집 어시스트 도움말" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <action selector="showHelp:" target="Voe-Tx-rLC" id="wej-DK-Q1w"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="오픈소스 라이선스" id="a7q-N0-07Y">

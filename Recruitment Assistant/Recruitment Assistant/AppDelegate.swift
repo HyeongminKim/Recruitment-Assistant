@@ -43,5 +43,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let copyright = URL(string: "https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE")
         NSWorkspace.shared.open(copyright!)
     }
+    
+    @IBAction func showHelp(_ sender: Any) {
+        let copyright = URL(string: "https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/README.md")
+        NSWorkspace.shared.open(copyright!)
+    }
 }
 
