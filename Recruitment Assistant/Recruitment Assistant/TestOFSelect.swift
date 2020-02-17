@@ -80,7 +80,7 @@ struct TestOFSelect: View {
                 HStack {
                     if (self.auth && !self.safe) {
                         VStack {
-                            Text("기본 비밀번호를 사용할 경우 보안상 취약할 수 있음")
+                            Text("기존 비밀번호를 사용할 경우 정보 유출이 있을 수 있음")
                                 .bold().padding().fixedSize()
                             HStack {
                                 Button(action: {
