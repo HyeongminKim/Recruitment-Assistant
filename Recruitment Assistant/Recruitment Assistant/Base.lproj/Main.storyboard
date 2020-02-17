@@ -290,6 +290,11 @@ CA
                                                 <action selector="performZoom:" target="Ady-hI-5gd" id="DIl-cC-cCs"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="닫기" keyEquivalent="w" id="rYT-Bo-jKz">
+                                            <connections>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="gYt-3T-zwl"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
                                         <menuItem title="모두 앞으로 가져오기" id="LE2-aR-0XJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
