@@ -309,6 +309,12 @@ CA
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="오픈소스 라이선스" id="a7q-N0-07Y">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showCopyright:" target="Voe-Tx-rLC" id="yqg-Qf-wem"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>

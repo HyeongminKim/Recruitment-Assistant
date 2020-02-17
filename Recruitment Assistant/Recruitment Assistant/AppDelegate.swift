@@ -3,7 +3,7 @@
 //  Recruitment Assistant
 //
 //  Created by HM on 2020/02/08.
-//  Copyright © 2020 HM. All rights reserved.
+//  Copyright © 2020 Hyeongmin Kim. License under the MIT License
 //
 
 import Cocoa
@@ -37,6 +37,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         exit(EXIT_SUCCESS)
+    }
+    
+    @IBAction func showCopyright(_ sender: Any) {
+        let copyright = URL(string: "https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE")
+        NSWorkspace.shared.open(copyright!)
     }
 }
 

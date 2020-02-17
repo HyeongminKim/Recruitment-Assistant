@@ -3,7 +3,7 @@
 //  Recruitment Assistant
 //
 //  Created by HM on 2020/02/09.
-//  Copyright © 2020 HM. All rights reserved.
+//  Copyright © 2020 Hyeongmin Kim. License under the MIT License
 //
 
 import SwiftUI

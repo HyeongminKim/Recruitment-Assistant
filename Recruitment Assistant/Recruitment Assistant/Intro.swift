@@ -3,7 +3,7 @@
 //  Recruitment Assistant
 //
 //  Created by HM on 2020/02/08.
-//  Copyright © 2020 HM. All rights reserved.
+//  Copyright © 2020 Hyeongmin Kim. License under the MIT License
 //
 
 import SwiftUI
@@ -48,7 +48,7 @@ struct Intro: View {
                     Text("결과 폴더")
                 }
             }.foregroundColor(.orange)
-            Text("프로그램의 저작권은 그린게코게임즈에 있습니다. ").padding()
+            Text("")
             Text("본 출제된 문제를 무단 복제, 공유, 배포시 법적 책임을 물을 수 있습니다. ")
                 .foregroundColor(.red)
         }
