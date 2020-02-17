@@ -34,4 +34,4 @@
 * 정답 파일과 문제 개수가 다를 경우에 발생하며 파일이 제대로 선택되었는지 또는 규칙에 따라 제대로 작성되었는지 확인해 주세요. 
 
 ## 라이선스
-* 이 애플리케이션과 프로젝트, 소스코드의 라이선스는 MIT License에 귀속됩니다. 
+* 이 애플리케이션과 프로젝트, 소스코드의 라이선스는 [MIT License](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE)에 귀속됩니다. 
