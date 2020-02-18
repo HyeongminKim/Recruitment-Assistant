@@ -35,3 +35,6 @@
 
 ## 라이선스
 * 이 애플리케이션과 프로젝트, 소스코드의 라이선스는 [MIT License](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE)에 귀속됩니다. 
+
+## 스크린샷
+![실행 화면](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/.github/README_PHOTO.png?raw=true)
