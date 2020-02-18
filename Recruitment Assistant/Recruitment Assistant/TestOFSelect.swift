@@ -40,6 +40,8 @@ struct TestOFSelect: View {
                                 self.isAlert = true
                                 self.title = "관계자 아이디 또는 비밀번호가 다릅니다. "
                                 self.message = ""
+                                self.adminID = ""
+                                self.adminPW = ""
                             }
                         } else {
                             if self.UserDB.answerItem == nil || self.UserDB.testItem == nil {
