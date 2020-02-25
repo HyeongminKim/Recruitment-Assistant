@@ -35,7 +35,7 @@ struct RAChange: View {
                         SecureField("변경할 비밀번호 검증", text: self.$captchaInput).frame(width: 150)
                     } else {
                         Text("\(self.captcha)")
-                            .font(.title).padding().fixedSize()
+                            .italic().font(.title).padding().fixedSize()
                         TextField("캡챠 숫자만 입력", text: self.$captchaInput).frame(width: 150)
                         TextField("기본 관계자 아이디 입력", text: self.$adminID).frame(width: 150)
                         SecureField("기본 관계자 비밀번호 입력", text: self.$adminPW).frame(width: 150)
