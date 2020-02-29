@@ -76,6 +76,7 @@ struct RAChange: View {
                         }
                     } else if !self.UserDB.auth {
                         Button(action: {
+                            self.captchaInput = ""
                             self.captcha = arc4random_uniform(8999) + 1000
                         }) { Text("새로고침") }.padding()
                         Button(action: {
@@ -99,7 +100,7 @@ struct RAChange: View {
                                 UserDefaults.standard.removeObject(forKey: "testItem")
                                 UserDefaults.standard.removeObject(forKey: "userIDItem")
                                 UserDefaults.standard.removeObject(forKey: "answerItem")
-                                self.UserDB.status = "TestOFSelect"
+                                self.UserDB.status = "Intro"
                             } else if UInt(self.captchaInput) == UInt(self.captcha) && UInt(self.captchaInput) != nil && (self.adminID != "admin" || self.adminPW != "passwd"){
                                 self.isAlert = true
                                 self.adminID = ""
