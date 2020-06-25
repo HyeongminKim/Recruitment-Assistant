@@ -23,18 +23,18 @@
 ## 관계자 계정 설명
 1. 초기 관계자 계정은 ID: admin , PW: passwd 입니다. 
 2. 관계자 계정은 보안을 위해 수정할 수 있으며 만약 아이디 또는 비밀번호를 유실하였을 경우에는 초기화 할 수 있습니다. 
-3. **초기화할 경우에는 문제, 정답, 식별번호, 성적이 유출되는 것을 방지하기 위해 기존에 지정한 파일과 폴더는 모두 초기화 됩니다.**
+3. **초기화할 경우에는 문제, 정답, 식별번호, 성적이 유출되는 것을 방지하기 위해 기존에 지정한 파일과 폴더의 경로는 모두 기본값으로 재설정됩니다. **
 
 ## 오류 설명
 
 ### NullReferenceException 또는 여기에 나와있지 않은 예기치 않은 동작
-* 이슈를 생성하거나 또는 포크한 후 PR를 보내주시기 바랍니다.
+- 이슈를 생성하거나 포크한 후 PR를 보내주시기 바랍니다.
 
 ### IndexOutOfRangeException
-* 정답 파일과 문제 개수가 다를 경우에 발생하며 파일이 제대로 선택되었는지 또는 규칙에 따라 제대로 작성되었는지 확인해 주세요. 
+- 정답 파일과 문제 개수가 다를 경우에 발생하며 파일이 제대로 선택되었는지 또는 규칙에 따라 제대로 작성되었는지 확인해 주세요. 
 
 ## 라이선스
-* 이 애플리케이션과 프로젝트, 소스코드의 라이선스는 [MIT License](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE)에 귀속됩니다. 
+- 이 애플리케이션과 프로젝트, 소스코드의 라이선스는 [MIT License](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/LICENSE)에 귀속됩니다. 
 
 ## 스크린샷
 ![실행 화면](https://github.com/HyeongminKim/Recruitment-Assistant/blob/master/.github/README_PHOTO.png?raw=true)
