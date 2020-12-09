@@ -110,7 +110,7 @@ struct TestOFSelect: View {
                                     if (test.url != nil) {
                                         self.UserDB.TestFile = test.url!.path
                                         let fileResult = try! NSString(contentsOfFile: NSString(string: test.url!.path) as String, encoding: String.Encoding.utf8.rawValue)
-                                        self.UserDB.testItem = fileResult.components(separatedBy: ",")
+                                        self.UserDB.testItem = fileResult.components(separatedBy: "§")
                                         UserDefaults.standard.set(self.UserDB.TestFile, forKey: "TestFile")
                                         UserDefaults.standard.set(self.UserDB.testItem, forKey: "testItem")
                                     }
