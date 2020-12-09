@@ -1,5 +1,5 @@
 # 사원 모집 어시스트에 오신 것을 환영합니다. 
-
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/hmDonate)
 ## 파일 설명
 
 ### 테스트 파일
